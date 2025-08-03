@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenneth Perschke - Author of Voidwalker</title>
+    <!-- Use Tailwind CSS for a clean, responsive design -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f7f7;
+        }
+        .hero {
+            background-color: #1a202c; /* Dark gray for the hero section */
+            color: #f7f7f7;
+        }
+        .text-overlay {
+            background-color: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+        }
+        .book-cover {
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+        .book-cover:hover {
+            transform: scale(1.05);
+        }
+        .btn {
+            transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Hero Section with Book Cover -->
+    <header class="hero text-white py-20 px-4 md:px-8 lg:px-16 flex items-center justify-center min-h-screen">
+        <div class="container mx-auto flex flex-col-reverse lg:flex-row items-center justify-between space-y-12 lg:space-y-0 lg:space-x-12">
+            
+            <!-- Hero Text Content -->
+            <div class="text-center lg:text-left text-overlay p-8 md:p-12 lg:p-16 rounded-3xl max-w-2xl">
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-4">
+                    VOIDWALKER
+                </h1>
+                <h2 class="text-xl sm:text-2xl font-light mb-6">
+                    A novel by Kenneth Perschke
+                </h2>
+                <p class="text-base sm:text-lg mb-8 max-w-xl mx-auto lg:mx-0">
+                    A chilling journey into a world where the sky bleeds red and reality is a broken, distorted song. Daniel and his silent brother Micah must confront a force that seeks to name and unravel them, before they lose themselves entirely to the void.
+                </p>
+                <div class="space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="https://www.amazon.com/dp/B0FKZBF9DG" class="btn bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-8 rounded-full shadow-lg inline-block">
+                        Buy Now
+                    </a>
+                    <a href="#about-author" class="btn bg-gray-700 hover:bg-gray-800 text-white font-bold py-3 px-8 rounded-full shadow-lg inline-block">
+                        About the Author
+                    </a>
+                </div>
+            </div>
+
+            <!-- Book Cover Image -->
+            <div class="flex-shrink-0">
+                <img src="https://m.media-amazon.com/images/I/611ZrPUhPdL._SY466_.jpg" alt="Voidwalker Book Cover" class="book-cover w-64 md:w-80 lg:w-96 rounded-2xl">
+            </div>
+            
+        </div>
+    </header>
+
+    <!-- About the Author Section -->
+    <section id="about-author" class="bg-white py-16 px-4 md:px-8 lg:px-16">
+        <div class="container mx-auto">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center text-gray-800 mb-12">
+                About the Author
+            </h2>
+            <div class="max-w-prose text-gray-700 text-center mx-auto">
+                <p class="mb-4 text-base sm:text-lg">
+                    Kenneth Perschke is a writer of literary horror and speculative fiction, known for crafting worlds that are both beautiful and deeply unsettling. His work is inspired by the surreal, dreamlike narratives of authors like Neil Gaiman, exploring themes of identity, memory, and the unseen forces that shape reality.
+                </p>
+                <p class="mb-4 text-base sm:text-lg">
+                    When not writing, he can be found exploring nature or reading old books.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Me Section -->
+    <section id="contact-me" class="bg-gray-800 text-white py-16 px-4 md:px-8 lg:px-16 text-center">
+        <div class="container mx-auto max-w-2xl">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-4">Contact Me</h2>
+            <p class="text-base sm:text-lg mb-8">
+                I'd love to hear from you. For inquiries or to connect, please feel free to email me directly.
+            </p>
+            <p class="text-lg font-bold">
+                <a href="mailto:kjperschke89@gmail.com" class="text-red-600 hover:underline">kjperschke89@gmail.com</a>
+            </p>
+        </div>
+    </section>
+
+    <!-- Buy Now Section (Place your Amazon link here) -->
+    <section id="buy-now" class="bg-gray-200 py-16 px-4 md:px-8 lg:px-16 text-center">
+        <div class="container mx-auto">
+            <h2 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-8">
+                Get Your Copy Today
+            </h2>
+            <div class="space-y-4 sm:space-y-0 sm:space-x-6">
+                <a href="https://www.amazon.com/dp/B0FKZBF9DG" class="btn bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-8 rounded-full shadow-lg inline-block">
+                    Buy on Amazon
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-400 py-6 px-4 md:px-8 lg:px-16 text-center">
+        <div class="container mx-auto">
+            <p>&copy; 2024 Kenneth Perschke. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
